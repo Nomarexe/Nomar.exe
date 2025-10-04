@@ -3,52 +3,207 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agenti del Codice - Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #1e1e1e;
-        }
-        h1 {
-            color: #dadada;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #dadada;
-            font-size: 18px;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Archivio Documentazione</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Agenti del Codice</h1>
-    <p>Benvenuti nella documentazione di Agenti del Codice. Seleziona un capitolo per iniziare:</p>
-    <nav>
-        <ul>
-            <li><a href="agenti-del-codice/capitolo-1-–-il-pensiero-modulare:-scrivere-come-costruire.html">Capitolo 1 – Il Pensiero Modulare: Scrivere come Costruire</a></li>
-            <li><a href="agenti-del-codice/capitolo-2-–-il-debug-come-verità:-errore,-causa,-rimedio.html">Capitolo 2 – Il Debug come Verità: Errore, Causa, Rimedio</a></li>
-            <li><a href="agenti-del-codice/capitolo-3-–-versioni-e-identità:-il-sé-nel-git.html">Capitolo 3 – Versioni e Identità: Il Sé nel Git</a></li>
-            <li><a href="agenti-del-codice/capitolo-4-–-api-e-relazioni:-dialogo-tra-sistemi.html">Capitolo 4 – API e Relazioni: Dialogo tra Sistemi</a></li>
-            <li><a href="agenti-del-codice/capitolo-5-–-documentazione-come-difesa:-scrivere-per-proteggere.html">Capitolo 5 – Documentazione come Difesa: Scrivere per Proteggere</a></li>
-            <li><a href="agenti-del-codice/capitolo-6-–-estensioni-e-agenti:-codice-che-agisce-nel-mondo.html">Capitolo 6 – Estensioni e Agenti: Codice che Agisce nel Mondo</a></li>
-            <li><a href="agenti-del-codice/capitolo-7-–-sicurezza-e-confine:-proteggere-il-sistema.html">Capitolo 7 – Sicurezza e Confine: Proteggere il Sistema</a></li>
-            <li><a href="agenti-del-codice/capitolo-8-–-refactoring-come-rinascita:-pulizia-e-ristrutturazione.html">Capitolo 8 – Refactoring come Rinascita: Pulizia e Ristrutturazione</a></li>
-            <li><a href="agenti-del-codice/capitolo-9-–-prompt-engineering:-linguaggio-per-agenti-intelligenti.html">Capitolo 9 – Prompt Engineering: Linguaggio per Agenti Intelligenti</a></li>
-            <li><a href="agenti-del-codice/capitolo-10-–-filosofia-del-dev:-etica,-potere-e-responsabilità.html">Capitolo 10 – Filosofia del Dev: Etica, Potere e Responsabilità</a></li>
-            <li><a href="agenti-del-codice/capitolo-11-–-strumenti-del-codice:-l’arsenale-del-developer.html">Capitolo 11 – Strumenti del Codice: L’Arsenale del Developer</a></li>
-            <li><a href="agenti-del-codice/capitolo-12-–-il-codice-come-pensiero:-simboli,-silenzio-e-intuizione.html">Capitolo 12 – Il Codice come Pensiero: Simboli, Silenzio e Intuizione</a></li>
-            <li><a href="agenti-del-codice/capitolo-13-–-metodologie-agili:-scrum,-kanban-e-sviluppo-iterativo.html">Capitolo 13 – Metodologie Agili: Scrum, Kanban e Sviluppo Iterativo</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>Archivio Documentazione</h1>
+        <p class="subtitle">Raccolta organizzata di materiali tecnici e guide</p>
+        
+        <div class="tabs">
+            <button class="tab active" data-collection="agenti-del-codice">Agenti del Codice</button>
+            <!-- <button class="tab" data-collection="esempio">Esempio</button> -->
+        </div>
+    </header>
+    
+    <main>
+        <!-- Raccolta Agenti del Codice -->
+        <div class="collection active" id="agenti-del-codice">
+            <h2 class="collection-title">Agenti del Codice</h2>
+            <p class="collection-description">Principi dello sviluppo software moderno</p>
+            
+            <div class="chapters-list">
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-1-–-il-pensiero-modulare:-scrivere-come-costruire.html" class="chapter-link">
+                        <div class="chapter-number">1</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Il Pensiero Modulare: Scrivere come Costruire</div>
+                            <div class="chapter-description">Strutturare il codice in moduli riutilizzabili e indipendenti</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-2-–-il-debug-come-verità:-errore,-causa,-rimedio.html" class="chapter-link">
+                        <div class="chapter-number">2</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Il Debug come Verità: Errore, Causa, Rimedio</div>
+                            <div class="chapter-description">Identificare e risolvere i bug in modo sistematico</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-3-–-versioni-e-identità:-il-sé-nel-git.html" class="chapter-link">
+                        <div class="chapter-number">3</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Versioni e Identità: Il Sé nel Git</div>
+                            <div class="chapter-description">Gestire le versioni del codice e tracciarne l'evoluzione</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-4-–-api-e-relazioni:-dialogo-tra-sistemi.html" class="chapter-link">
+                        <div class="chapter-number">4</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">API e Relazioni: Dialogo tra Sistemi</div>
+                            <div class="chapter-description">Comunicazione tra diverse applicazioni e servizi</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-5-–-documentazione-come-difesa:-scrivere-per-proteggere.html" class="chapter-link">
+                        <div class="chapter-number">5</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Documentazione come Difesa: Scrivere per Proteggere</div>
+                            <div class="chapter-description">Importanza della documentazione per mantenere il codice</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-6-–-estensioni-e-agenti:-codice-che-agisce-nel-mondo.html" class="chapter-link">
+                        <div class="chapter-number">6</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Estensioni e Agenti: Codice che Agisce nel Mondo</div>
+                            <div class="chapter-description">Interazione con l'ambiente e automazione di processi</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-7-–-sicurezza-e-confine:-proteggere-il-sistema.html" class="chapter-link">
+                        <div class="chapter-number">7</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Sicurezza e Confine: Proteggere il Sistema</div>
+                            <div class="chapter-description">Principi per proteggere applicazioni da minacce esterne</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-8-–-refactoring-come-rinascita:-pulizia-e-ristrutturazione.html" class="chapter-link">
+                        <div class="chapter-number">8</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Refactoring come Rinascita: Pulizia e Ristrutturazione</div>
+                            <div class="chapter-description">Migliorare la struttura del codice esistente</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-9-–-prompt-engineering:-linguaggio-per-agenti-intelligenti.html" class="chapter-link">
+                        <div class="chapter-number">9</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Prompt Engineering: Linguaggio per Agenti Intelligenti</div>
+                            <div class="chapter-description">Comunicare efficacemente con sistemi di IA</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-10-–-filosofia-del-dev:-etica,-potere-e-responsabilità.html" class="chapter-link">
+                        <div class="chapter-number">10</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Filosofia del Dev: Etica, Potere e Responsabilità</div>
+                            <div class="chapter-description">Implicazioni etiche del lavoro di sviluppatore</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-11-–-strumenti-del-codice:-l’arsenale-del-developer.html" class="chapter-link">
+                        <div class="chapter-number">11</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Strumenti del Codice: L’Arsenale del Developer</div>
+                            <div class="chapter-description">Strumenti essenziali per sviluppatori</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-12-–-il-codice-come-pensiero:-simboli,-silenzio-e-intuizione.html" class="chapter-link">
+                        <div class="chapter-number">12</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Il Codice come Pensiero: Simboli, Silenzio e Intuizione</div>
+                            <div class="chapter-description">Relazione tra pensiero astratto e rappresentazione nel codice</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="agenti-del-codice/capitolo-13-–-metodologie-agili:-scrum,-kanban-e-sviluppo-iterativo.html" class="chapter-link">
+                        <div class="chapter-number">13</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Metodologie Agili: Scrum, Kanban e Sviluppo Iterativo</div>
+                            <div class="chapter-description">Metodologie di sviluppo per progetti moderni</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+<!-- Raccolta di esempio -->
+        <div class="collection" id="esempio">
+            <h2 class="collection-title">Esempio</h2>
+            <p class="collection-description">Raccolta di esempio per dimostrazione</p>
+            <div class="chapters-list">
+                <div class="chapter-item">
+                    <a href="#" class="chapter-link">
+                        <div class="chapter-number">1</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Capitolo di Esempio 1</div>
+                            <div class="chapter-description">Descrizione del capitolo di esempio 1</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="chapter-item">
+                    <a href="#" class="chapter-link">
+                        <div class="chapter-number">2</div>
+                        <div class="chapter-content">
+                            <div class="chapter-title">Capitolo di Esempio 2</div>
+                            <div class="chapter-description">Descrizione del capitolo di esempio 2</div>
+                        </div>
+                    </a>
+                </div>
+    </main>
+    
+    <footer>
+        <p>Archivio Documentazione &copy; 2025</p>
+    </footer>
+
+    <script>
+        // Gestione semplice dei tab
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Rimuovi active da tutti i tab
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                // Aggiungi active al tab cliccato
+                tab.classList.add('active');
+                
+                // Nascondi tutte le raccolte
+                document.querySelectorAll('.collection').forEach(collection => {
+                    collection.classList.remove('active');
+                });
+                
+                // Mostra la raccolta corrispondente
+                const collectionId = tab.getAttribute('data-collection');
+                document.getElementById(collectionId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
